@@ -70,35 +70,33 @@ authrpc.port 8546 --networkid { NETWORK_ID } --unlock { ADDRESS_NODE2 } --passwo
 5
 PROGRAM
 #Genesis file privateblock.json
+```
 {
-"config" {
-"chainId" 878787,
-"homesteadBlock" 0,
-"eip150Block" 0,
-"eip155Block" 0,
-"eip158Block" 0,
-"byzantiumBlock" 0,
-"constantinopleBlock" 0,
-"petersburgBlock" 0,
-"istanbulBlock" 0,
-"berlinBlock" 0,
-"clique" {
-"period" 5,
-"epoch" 30000
+  "config": {
+    "chainId": 292106,
+    "homesteadBlock": 0,
+    "eip150Block": 0,
+    "eip155Block": 0,
+    "eip158Block": 0,
+    "byzantiumBlock": 0,
+    "constantinopleBlock": 0,
+    "petersburgBlock": 0,
+    "istanbulBlock": 0,
+    "berlinBlock": 0,
+    "clique": {
+      "period": 5,
+      "epoch": 30000
+    }
+  },
+  "difficulty": "1",
+  "gasLimit": "8000000",
+  "extradata": "0x0000000000000000000000000000000000000000000000000000000000000000b501013d7E0bdC2a84152C1658FDe03389462d190000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "alloc": {
+    "b501013d7E0bdC2a84152C1658FDe03389462d19": { "balance": "30000000000000000000" },
+    "240279442e1c69138fa4E091d7B4Dcf65cc44a36": { "balance": "30000000000000000000" }
+  }
 }
-},
-"difficulty" "1",
-"gasLimit" "8000000",
-"extradata"
-"0x00000000000000000000000000000000000000000000000000000000000000001d09cd3F475a65
-7381b223A9c91029865b27E0270000000000000000000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000000000000000000000000000000",
-"alloc" {
-"1d09cd3F475a657381b223A9c91029865b27E027" { "balance" "3000000000000000000" },
-"e503980FB9E4D17048b973B0ee01759DcF2d7879" { "balance" "3000000000000000000" }
-}
-}
-6
+```
 #Smart Contract New.sol
 //SPDX-License-Identifier MIT
 pragma solidity ^0.8.19;
@@ -114,9 +112,13 @@ return name;
 ```
 OUTPUT
 # Deploying Transaction in Remix
-7
+
+<img width="1916" height="1061" alt="image" src="https://github.com/user-attachments/assets/2197e4e5-5dfa-4ae1-9b00-e49233bba9b6" />
+
+
 # Contract Creation Output in Command Prompt
-<img width="1180" height="492" alt="image" src="https://github.com/user-attachments/assets/fc0eaa31-1340-4c3e-8410-3ca49a1f4dcd" />
+
+<img width="1915" height="1192" alt="image" src="https://github.com/user-attachments/assets/0d64fc70-f18b-401a-8b1c-750792c3b8c5" />
 
 RESULT: Thus, the Private Blockchain is created, nodes are added with accounts, and Ether is transferred
 into it by creating and deploying Smart contract successfully
